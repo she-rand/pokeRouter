@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import PokemonLogo from  '../../public/pokemon.svg'
+import PokemonLogo from  '/pokemon.svg'
 
 const Navbar = () => {
     const setActiveClass=({isActive})=>(isActive ? 'activeStyle':'inactiveStyle')
@@ -10,7 +10,7 @@ const Navbar = () => {
             <NavLink to="/" className={setActiveClass}> Home </NavLink> |
             <NavLink to="/pokemon" className={setActiveClass}> Pokemon </NavLink>
         </div>
-        </nav>
+      </nav>
     );
   };
   export default Navbar;

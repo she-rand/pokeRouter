@@ -25,8 +25,8 @@ const PokemonDetail = () => {
     return (
       <>
        
-        <div className="flex-d">
-        <Card style={{ width: '40rem' }} className="flex-row">
+        <div className="flex-d main">
+        <Card style={{ width: '30rem' }} className="flex-row">
             <Card.Img variant="top" src={pokemonDetail.photo} />
             <CardBody>
                 <Card.Title>{name}</Card.Title>

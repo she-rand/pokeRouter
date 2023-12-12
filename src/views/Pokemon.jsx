@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { PokeContext } from "../context/PokeContext";
 import { useNavigate } from "react-router-dom";
+import { Alert } from "react-bootstrap";
 
 const Pokemon = () => {
     const {pokemon}=useContext(PokeContext);
@@ -8,11 +9,17 @@ const Pokemon = () => {
     const navigate=useNavigate();
 
     const goToDetail=()=>{
-        navigate(`/pokemon/${pokemonSelected}`)
+        if(pokemonSelected==="pokemon"){
+            alert("Select a pokemon")
+        }else{
+            navigate(`/pokemon/${pokemonSelected}`)
+        }
+        
 
     }
     const handleChange= (e)=>{
         console.log(e.target.value);
+        
         setPokemonSelected(e.target.value);
        
     }
