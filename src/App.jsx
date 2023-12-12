@@ -11,15 +11,14 @@ function App() {
   return (
     <>
     
-    <Navbar></Navbar>
-    <Routes>
-      <Route path="/" element={<Home/>}></Route>
-      <Route path="/pokemon" element={<Pokemon/>}></Route>
-      <Route path="/pokemon/:name" element={<PokemonDetail/>}></Route>
-    </Routes>
-   
-    
-    
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/pokemon" element={<Pokemon/>}></Route>
+          <Route path="/pokemon/:name" element={<PokemonDetail/>}></Route>
+        </Routes>
+        
+  
     </>
   )
 }

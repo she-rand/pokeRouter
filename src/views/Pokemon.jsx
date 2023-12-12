@@ -18,16 +18,20 @@ const Pokemon = () => {
     }
     return (
       <>
-        <select value={pokemonSelected} onChange={handleChange}>
-        <option value="pokemon">pokemon</option>
-            {pokemon.map((item, i)=>(
-                <option value={item.name}>{item.name}</option>
-            )
+        <div className="main">
+            <h2 className="m-2">Select a Pokemon</h2>
+            <select value={pokemonSelected} onChange={handleChange}>
+            <option value="pokemon">pokemon</option>
+                {pokemon.map((item, i)=>(
+                    <option value={item.name}>{item.name}</option>
+                )
 
-            )}
-        </select>
-        <button onClick={goToDetail}>Go to Details</button>
-      </>
+                )}
+            </select>
+            <button type="button"  className="btn btn-dark m-3" onClick={goToDetail}>Go to Details</button>
+        
+        </div>
+        </>
     );
   };
   export default Pokemon;
