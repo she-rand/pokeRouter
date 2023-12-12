@@ -1,7 +1,6 @@
 # PokeRouter
 
-This project is an exercise to practice useNavigation, useParams adn NavLink
+This project is an exercise to practice useNavigation, useParams and NavLink. You can check the project in the followong link:
 
-Currently, two official plugins are available:
 
-- [PokeRouter](https://sweet-cuchufli-9de8cd.netlify.app/)h
+- [PokeRouter](https://sweet-cuchufli-9de8cd.netlify.app/)
