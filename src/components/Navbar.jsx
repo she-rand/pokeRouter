@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import PokemonLogo from  '/pokemon.svg'
 
 const Navbar = () => {
-    const setActiveClass=({isActive})=>(isActive ? 'activeStyle':'inactiveStyle')
+    const setActiveClass=({isActive})=>(isActive ? 'activeStyle':`undefined`)
     return (
       <nav className="navbar">
         <img src={PokemonLogo}  style={{ width: '3rem' }}alt="React Logo" />
